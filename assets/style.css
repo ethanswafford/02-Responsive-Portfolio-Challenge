@@ -2,6 +2,16 @@
 
 /* Mobile first*/
 
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .project-grid {
   display: flex;
   flex-direction: column; /* default for mobile */
@@ -17,13 +27,26 @@
 
 .logo {
   color:aliceblue;
+  text-align: center;
+  flex: 1;
 }
+
+#about{
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem; 
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(-1.5rem);
+}
+
 
 .nav-links {
   color: blue;
   display: flex;
   justify-content: flex-end;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .nav-links a {
@@ -38,6 +61,15 @@
   background-color: blue;
   transform: scale(1.05);
   text-decoration: underline;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  justify-content: flex-end;
+  padding-bottom: 3rem;     
+  text-align: center;
 }
 
 @media (min-width: 768px) {
