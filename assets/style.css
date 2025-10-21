@@ -1,1 +1,14 @@
 /* style.css*/
+
+/* nobile first*/
+
+.project-grid {
+  display: flex;
+  flex-direction: column; /* default for mobile */
+}
+
+@media (min-width: 768px) {
+  .project-grid {
+    flex-direction: row; /* switch to row on larger screens */
+  }
+}
