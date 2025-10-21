@@ -7,6 +7,39 @@
   flex-direction: column; /* default for mobile */
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #13293d;
+}
+
+.logo {
+  color:aliceblue;
+}
+
+.nav-links {
+  color: blue;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  border: 1px solid whitesmoke;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: color 0.3s ease, transform 0.3s ease, text-decoration 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: blue;
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
 @media (min-width: 768px) {
   .project-grid {
     flex-direction: row; /* switch to row on larger screens */
