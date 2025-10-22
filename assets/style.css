@@ -65,7 +65,8 @@ img {
    
   
   .project-card a {
-    color: #13293d;
+    background-color: #13293d;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
@@ -77,7 +78,7 @@ img {
   }
 
   .project-card a:hover {
-    background-color: #13293d;
+    background-color: blue;
     color: white;
   }
 
