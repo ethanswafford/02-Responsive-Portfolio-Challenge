@@ -12,10 +12,38 @@ body {
   min-height: 100vh;
 }
 
+section{
+  padding: 5rem 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#projects {
+  margin-bottom: 6rem; 
+}
+
 .project-grid {
   display: flex;
-  flex-direction: column; /* default for mobile */
-}
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  margin: 0 auto;
+  }
+
+  .project-card { 
+    border: solid 1px gray;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;              
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  } 
 
 .navbar {
   display: flex;
@@ -70,10 +98,18 @@ body {
   justify-content: flex-end;
   padding-bottom: 3rem;     
   text-align: center;
+  margin-top: 3rem;
 }
 
-@media (min-width: 768px) {
-  .project-grid {
-    flex-direction: row; /* switch to row on larger screens */
+
+
+footer p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+ @media (min-width: 768px) {
+ .project-grid {
+    flex-direction: row; 
   }
 }
