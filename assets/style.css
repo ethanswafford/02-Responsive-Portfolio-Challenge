@@ -130,6 +130,10 @@ img {
 }
 
 .nav-links a {
+  display: block;
+  width: 150px;
+  text-align: center;
+  white-space: nowrap;
   color: white;
   border: 1px solid whitesmoke;
   padding: 0.5rem 1rem;
