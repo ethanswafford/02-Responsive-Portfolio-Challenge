@@ -2,17 +2,19 @@
 
 /* Mobile first*/
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
+  background-color: #f7f9fb;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-section{
+section {
   padding: 5rem 2rem;
 }
 
@@ -31,7 +33,6 @@ img {
   width: 120px;
   margin-left: auto;
   margin-right: auto;
-  transform: translateX(-2 rem);
 }
 
 .bio {
@@ -39,8 +40,9 @@ img {
   text-align: center;
   margin-top: 1.5rem;
 }
+
 #projects {
-  margin-bottom: 6rem; 
+  margin-bottom: 6rem;
 }
 
 .project-grid {
@@ -51,36 +53,36 @@ img {
   align-items: stretch;
   gap: 2rem;
   margin: 0 auto;
-  }
+}
 
-  .project-card { 
-    border: solid 1px gray;
-    padding: 1.5rem;
-    border-radius: 8px;
-    text-align: center;
-    width: 300px;              
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-   
-  
-  .project-card a {
-    background-color: #13293d;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    border: 1px solid #13293d;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
+.project-card {
+  border: solid 1px gray;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .project-card a:hover {
-    background-color: blue;
-    color: white;
-  }
+.project-card a {
+  background-color: #13293d;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #13293d;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: blue;
+  color: white;
+  text-decoration: underline;
+}
 
 .navbar {
   display: flex;
@@ -94,21 +96,29 @@ img {
   margin-right: 1rem;
   padding-right: 2rem;
   justify-content: start;
-  color:aliceblue;
+  color: aliceblue;
   text-align: center;
 }
 
-#about{
+.logo a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+#about {
   text-align: center;
   padding: 2rem;
   padding-right: 2rem;
-  margin-top: 4 rem; 
+  margin-top: 4rem;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  transform: translateX(-5 rem);
 }
-
 
 .nav-links {
   padding-right: 1rem;
@@ -135,16 +145,46 @@ img {
 #contact {
   display: flex;
   flex-direction: column;
-  align-items: center;      
+  align-items: center;
   justify-content: flex-end;
-  padding-bottom: 0.5rem;     
+  padding-bottom: 0.5rem;
   text-align: center;
   margin-top: 2rem;
 }
 
-#contact p{
+#contact p {
   margin-bottom: 1rem;
   font-size: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-radius: 4px;
+  border-color: #13293d;
+  box-shadow: 0 0 5px rgba(19, 41, 61, 0.3);
+}
+
+.contact-form button {
+  background-color: #13293d;
+  color: white;
+  border-radius: 3px;
+}
+
+.contact-form button:hover {
+  background-color: blue;
+  text-decoration: underline;
+}
+
+button,
+a {
+  cursor: pointer;
 }
 
 footer p {
@@ -154,9 +194,8 @@ footer p {
   margin-bottom: 2rem;
 }
 
- @media (min-width: 768px) {
- .project-grid {
-    flex-direction: row; 
+@media (min-width: 768px) {
+  .project-grid {
+    flex-direction: row;
   }
 }
-
