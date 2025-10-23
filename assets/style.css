@@ -199,16 +199,13 @@ footer p {
   .project-grid {
     flex-direction: row;
   }
-}
-
-@media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
   .nav-links {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
