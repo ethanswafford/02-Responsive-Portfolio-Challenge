@@ -210,14 +210,15 @@ footer p {
   }
 
   .nav-links {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 0.5rem;
     padding-top: 1rem;
   }
 
   .nav-links a {
-    display: block;
+    display: flex;
     width: 100%;
     text-align: center;
   }
