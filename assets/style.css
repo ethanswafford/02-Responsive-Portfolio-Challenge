@@ -85,6 +85,7 @@ img {
 }
 
 .navbar {
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -197,5 +198,12 @@ footer p {
 @media (min-width: 768px) {
   .project-grid {
     flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
   }
 }
