@@ -203,6 +203,7 @@ footer p {
   .project-grid {
     flex-direction: row;
   }
+
   .navbar {
     flex-direction: row;
     align-items: center;
@@ -211,15 +212,13 @@ footer p {
   .nav-links {
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 1rem 0;
     gap: 0.5rem;
+    padding-top: 1rem;
   }
 
   .nav-links a {
     display: block;
-    width: 60%;
+    width: 100%;
     text-align: center;
   }
 }
