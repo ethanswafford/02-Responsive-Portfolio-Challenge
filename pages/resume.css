@@ -14,6 +14,20 @@ body {
   background-color: #13293d;
 }
 
+.resume-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.resume-title a:visited {
+  color: inherit;
+}
+
+.resume-title a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
 .resume-title {
   justify-content: center;
   color: aliceblue;
@@ -26,7 +40,32 @@ body {
 }
 
 .resume-download {
+  color: #13293d;
   font-weight: bold;
   font-size: 14px;
   text-align: center;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: #28a745;
+  padding: 0.1rem 0.5rem;
+  color: white;
+  border-radius: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-btn:hover {
+  background-color: #218838;
+  transform: scale(1.03);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.download-btn:active {
+  background-color: #1e7e34;
+  transform: scale(0.98);
 }
