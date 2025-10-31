@@ -1,92 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ethan Swafford | Portfolio</title>
-    <link rel="stylesheet" href="./assets/reset.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
-  </head>
 
-  <body>
-    <!-- ===== Header / Navbar ===== -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethan Swafford | Portfolio</title>
+  <link rel="stylesheet" href="./assets/reset.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
 
-   <header>
-      <nav class="navbar">
-        <h1 class="logo"><a href="pages/resume.html" target="_blank" rel="noopener noreferrer">Ethan Swafford</a></h1>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
+  <!-- ===== Header / Navbar ===== -->
 
-    <!-- ===== Main Content ===== -->
-    <main>
-      <!-- About Section -->
-      <section id="about" class="section">
-        <h2>About Me:</h2>
-        <img src="./images/proprofile.jpg" alt="a picture of the website creator/owner" />
-        <p class="bio">
-          My name's Ethan. I’m a passionate learner and developer currently working through a full-stack
-          bootcamp. I enjoy building web apps that are both functional and
-          beautiful, using technologies like HTML, CSS, JavaScript, and more.
-          If you would like to know more about my skills, education, and experience
-          you can press or click on the logo(my name) in the navbar at the top of the page.
-        </p>
-      </section>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo"><a href="pages/resume.html" target="_blank" rel="noopener noreferrer">Ethan Swafford</a></h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <!-- Projects Section -->
-      <section id="projects" class="section">
-        <h2>Projects:</h2>
-        <div class="project-grid">
-          <article class="project-card">
-            <h3>A web-based REST API</h3>
-            <p>
-              A dynamic trivia game that uses the OpenTDB REST API to load random questions
-              and track scores in real time.
-            </p>
-            <a href="https://ethanswafford.github.io/Jeopardy-trivia-game-opentdb-API/" class="btn">View Project</a>
-          </article>
+  <!-- ===== Main Content ===== -->
+  <main>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2>About Me:</h2>
+      <img src="./images/proprofile.jpg" alt="a picture of the website creator/owner" />
+      <p class="bio">
+        My name's Ethan. I’m a passionate learner and developer currently working through a full-stack
+        bootcamp. I enjoy building web apps that are both functional and
+        beautiful, using technologies like HTML, CSS, JavaScript, and more.
+        If you would like to know more about my skills, education, and experience
+        you can press or click on the logo(my name) in the navbar at the top of the page.
+      </p>
+    </section>
 
-          <article class="project-card">
-            <h3>Project Two</h3>
-            <p>
-              Another project example — describe what was learned and why it was
-              interesting.
-            </p>
-            <a href="#" class="btn">View Project</a>
-          </article>
-
-          <article class="project-card">
-            <h3>Project Three</h3>
-            <p>
-              This could link to GitHub repo or live demo once deployed.
-            </p>
-            <a href="#" class="btn">View Project</a>
-          </article>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact" class="section">
-        <h2>Contact:</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects:</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>A web-based REST API</h3>
           <p>
-            <em>Have a question or want to collaborate? Feel free to reach out!</em>
+            A dynamic trivia game that uses the OpenTDB REST API to load random questions
+            and track scores in real time.
           </p>
-        <form action="#" method="POST" class="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message"rows="2"required></textarea>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-      </section>
-    </main>
+          <a href="https://ethanswafford.github.io/Jeopardy-trivia-game-opentdb-API/" class="btn">View Project</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Project Two</h3>
+          <p>
+            Another project example — describe what was learned and why it was
+            interesting.
+          </p>
+          <a href="#" class="btn">View Project</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Project Three</h3>
+          <p>
+            This could link to GitHub repo or live demo once deployed.
+          </p>
+          <a href="#" class="btn">View Project</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <form action="#" method="POST" class="contact-form">
+      <div class="tooltip">
+        <input type="text" placeholder="Your Name" required />
+        <span class="tooltip-text">This part of the site is currently under construction</span>
+      </div>
+
+      <div class="tooltip">
+        <input type="email" placeholder="Your Email" required />
+        <span class="tooltip-text">This part of the site is currently under construction</span>
+      </div>
+
+      <div class="tooltip">
+        <textarea placeholder="Your Message" rows="2" required></textarea>
+        <span class="tooltip-text">This part of the site is currently under construction</span>
+      </div>
+
+      <div class="tooltip">
+        <button type="submit" class="btn">Send Message</button>
+        <span class="tooltip-text">This part of the site is currently under construction</span>
+      </div>
+    </form>
+
 
     <!-- ===== Footer ===== -->
     <footer>
       <p>© 2025 Ethan S. | Built with ❤️ using HTML & CSS</p>
     </footer>
-  </body>
+</body>
+
 </html>

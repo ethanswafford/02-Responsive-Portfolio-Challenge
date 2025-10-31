@@ -164,18 +164,40 @@ img {
 .contact-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
   padding: 1rem;
 }
 
+.tooltip {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.tooltip input,
+.tooltip textarea,
+.tooltip button {
+  width: 100%;
+  text-align: center;
+}
+
 .contact-form input,
 .contact-form textarea {
+  margin-left: 4rem;
+  padding-left: 0.6rem;
+  width: 65%;
   border-radius: 4px;
   border-color: #13293d;
   box-shadow: 0 0 5px rgba(19, 41, 61, 0.3);
 }
 
 .contact-form button {
+  width: 50%;
+  margin-left: 5.5rem;
   background-color: #13293d;
   color: white;
   border-radius: 3px;
@@ -189,6 +211,33 @@ img {
 button,
 a {
   cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 220px;
+  background-color: #13293d;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0.5rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 footer p {
